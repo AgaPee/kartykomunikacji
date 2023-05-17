@@ -1,0 +1,312 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.black {
+  background-color: #000;
+}
+
+.fill-black {
+  fill: #000;
+}
+
+.white {
+  background-color: #FFF;
+}
+
+.yellow {
+  background-color: #FFCC00;
+}
+
+.sea {
+  background-color: #99CCCC;
+}
+
+.color-sea {
+  color: #99CCCC;
+}
+
+.fill-sea {
+  fill: #99CCCC;
+}
+
+.color-yellow {
+  color: #FFCC00;
+}
+
+.fill-yellow {
+  fill: #FFCC00;
+}
+
+.color-white {
+  color: #FFF;
+}
+
+.margin-b-10 {
+  margin-bottom: 10px;
+}
+
+.margin-b-20 {
+  margin-bottom: 20px;
+}
+
+.margin-b-40 {
+  margin-bottom: 40px;
+}
+
+.margin-t-20 {
+  margin-top: 20px;
+}
+
+.margin-t-10 {
+  margin-top: 10px;
+}
+
+.margin-t-30 {
+  margin-top: 30px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 28.13px;
+  margin-bottom: 50px;
+}
+
+h3.h1 {
+  font-size: 24px;
+  line-height: 28.13px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.text-normal {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.text-18 {
+  font-size: 18px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+input[type=text] {
+  border: 10px solid #89B2B2;
+  font-size: 20px;
+  text-align: center;
+  padding: 8px 3px;
+}
+
+input[type=text]::placeholder {
+  font-weight: 700;
+  color: #CACACA;
+  opacity: 1;
+}
+
+.white input[type=text] {
+  border-color: #CACACA;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  display: none;
+}
+
+input:checked + label svg {
+  background-color: white;
+}
+
+.checkbok-white:checked + label svg {
+  background-color: #FFCC00;
+}
+
+.checkbok-yes:checked + label svg {
+  background-color: #52FF82;
+}
+
+.checkbok-no:checked + label svg {
+  background-color: #FF5C52;
+}
+
+.inputs > * {
+  width: 100%;
+}
+
+.input-adjust {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.input-short {
+  width: 60px;
+}
+
+svg {
+  margin-bottom: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-2 {
+  flex-basis: 48%;
+}
+
+.flex-3 {
+  flex-basis: 31%;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-3 {
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section {
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.section-inner {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.section-left {
+  align-items: flex-start;
+}
+
+.header {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  padding-top: 70px;
+  padding-bottom: 110px;
+}
+
+.rectangle {
+  width: 60px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.info {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tiles {
+  width: 100%;
+}
+
+.tile {
+  position: relative;
+}
+
+.tile_desc {
+  font-size: 14px;
+}
+
+.tile .icon-no {
+  position: absolute;
+  top: -10px;
+  margin: 0 auto;
+  transform: translateX(-10px);
+  pointer-events: none;
+}
+
+.section-answer {
+  padding-top: 0;
+}
+
+.answer {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.answer-title {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 5px 20px;
+  color: white;
+}
+
+.section-deaf {
+  padding-top: 132px;
+  margin-top: -110px;
+}
