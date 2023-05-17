@@ -162,6 +162,7 @@ input[type=text] {
   font-size: 20px;
   text-align: center;
   padding: 8px 3px;
+  width: 100%;
 }
 
 input[type=text]::placeholder {
@@ -172,6 +173,7 @@ input[type=text]::placeholder {
 
 .white input[type=text] {
   border-color: #CACACA;
+  margin: 0 40px;
 }
 
 input[type=checkbox],
@@ -193,6 +195,14 @@ input:checked + label svg {
 
 .checkbok-no:checked + label svg {
   background-color: #FF5C52;
+}
+
+.inputs input[type=text] {
+  width: auto;
+}
+
+.inputs > input[type=text] {
+  width: 100%;
 }
 
 .inputs > * {
@@ -233,6 +243,11 @@ svg {
 .grid-3 {
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-2 {
+  gap: 40px 20px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .section {
