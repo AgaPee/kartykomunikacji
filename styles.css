@@ -160,9 +160,12 @@ h2 {
 input[type=text] {
   border: 10px solid #89B2B2;
   font-size: 20px;
+  font-weight: 700;
   text-align: center;
   padding: 8px 3px;
   width: 100%;
+  box-shadow: none;
+  outline: none;
 }
 
 input[type=text]::placeholder {
@@ -214,7 +217,7 @@ input:checked + label svg {
   margin-right: 20px;
 }
 
-.input-short {
+.inputs .input-short[type=text] {
   width: 60px;
 }
 
@@ -226,6 +229,21 @@ svg {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.flex-no-wrap {
+  flex-wrap: nowrap;
+}
+
+.flex-gap-2 {
+  gap: 20px 40px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-gap-3 {
+  gap: 20px;
 }
 
 .flex-2 {
