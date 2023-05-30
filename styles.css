@@ -133,7 +133,7 @@ h1 {
   margin-bottom: 50px;
 }
 
-h3.h1 {
+.h1 {
   font-size: 24px;
   line-height: 28.13px;
   margin-bottom: 10px;
@@ -141,7 +141,11 @@ h3.h1 {
 
 h2 {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.h2 {
+  font-size: 20px;
 }
 
 .text-normal {
@@ -162,10 +166,12 @@ input[type=text] {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
-  padding: 8px 3px;
+  padding: 8px 1px;
   width: 100%;
+  max-width: 100%;
   box-shadow: none;
   outline: none;
+  text-transform: uppercase;
 }
 
 input[type=text]::placeholder {
@@ -200,14 +206,6 @@ input:checked + label svg {
   background-color: #FF5C52;
 }
 
-.inputs input[type=text] {
-  width: auto;
-}
-
-.inputs > input[type=text] {
-  width: 100%;
-}
-
 .inputs > * {
   width: 100%;
 }
@@ -218,11 +216,33 @@ input:checked + label svg {
 }
 
 .inputs .input-short[type=text] {
-  width: 60px;
+  width: 66px;
+}
+
+.white input.w-240 {
+  width: 240px;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
 svg {
   margin-bottom: 10px;
+}
+
+ul {
+  list-style: inside;
+  margin-left: 15px;
+}
+
+b {
+  font-weight: 700;
+}
+
+a {
+  color: #000;
 }
 
 .flex {
@@ -236,14 +256,20 @@ svg {
 }
 
 .flex-gap-2 {
-  gap: 20px 40px;
-  max-width: 300px;
+  gap: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-no-gap-2 {
+  gap: 0;
   margin-left: auto;
   margin-right: auto;
 }
 
 .flex-gap-3 {
-  gap: 20px;
+  gap: 0;
+  margin: 0 -10px;
 }
 
 .flex-2 {
@@ -269,16 +295,18 @@ svg {
 }
 
 .section {
-  padding: 20px 40px;
+  padding: 20px 0;
   text-align: center;
 }
 
 .section-inner {
-  max-width: 500px;
+  width: 360px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  position: relative;
+  padding: 0 40px;
 }
 
 .section-left {
@@ -303,12 +331,18 @@ svg {
   margin-bottom: 10px;
 }
 
-.tiles {
-  width: 100%;
-}
-
 .tile {
   position: relative;
+  width: 100px;
+  padding: 10px 0;
+}
+
+.tile--wide {
+  width: 120px;
+}
+
+.tile-widest {
+  width: 100%;
 }
 
 .tile_desc {
@@ -317,7 +351,7 @@ svg {
 
 .tile .icon-no {
   position: absolute;
-  top: -10px;
+  top: 0;
   margin: 0 auto;
   transform: translateX(-10px);
   pointer-events: none;
@@ -325,6 +359,10 @@ svg {
 
 .section-answer {
   padding-top: 0;
+}
+
+.section-question {
+  padding-bottom: 10px;
 }
 
 .answer {
@@ -337,6 +375,7 @@ svg {
   margin-bottom: 15px;
   padding: 5px 20px;
   color: white;
+  font-size: 12px;
 }
 
 .section-deaf {
