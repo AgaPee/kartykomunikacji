@@ -180,6 +180,10 @@ input[type=text]::placeholder {
   opacity: 1;
 }
 
+input[type=text]:focus::placeholder {
+  color: transparent;
+}
+
 .white input[type=text] {
   border-color: #CACACA;
   margin: 0 40px;
